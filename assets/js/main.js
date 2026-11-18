@@ -1144,6 +1144,15 @@
     }), { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
     els.forEach((e) => io.observe(e));
   }
+  /* Safety net: after scrolling stops, show anything at or above the viewport that a
+     fast fling skipped past, so no content can stay invisible. */
+  let settle;
+  function revealPassed() {
+    $$(".reveal:not(.is-in), .clip-reveal:not(.is-in), .is-split:not(.is-in)").forEach((el) => {
+      if (el.getBoundingClientRect().top < innerHeight) { el.classList.add("is-in"); io && io.unobserve(el); }
+    });
+  }
+  window.addEventListener("scroll", () => { clearTimeout(settle); settle = setTimeout(() => { if (!root.classList.contains("is-loading")) revealPassed(); }, 160); }, { passive: true });
 
   /* Count-up numbers */
   function initCounters() {
@@ -1235,29 +1244,6 @@
         if (photo) photo.style.transform = `rotateY(${(x * 6).toFixed(2)}deg) rotateX(${(-y * 6).toFixed(2)}deg)`;
       });
     }
-
-    /* Custom cursor */
-    const ring = document.createElement("div");
-    const dot = document.createElement("div");
-    ring.className = "cursor"; dot.className = "cursor-dot";
-    ring.setAttribute("aria-hidden", "true"); dot.setAttribute("aria-hidden", "true");
-    document.body.append(ring, dot);
-    let mx = -100, my = -100, rx = -100, ry = -100, running = false;
-    const loop = () => {
-      rx += (mx - rx) * 0.2; ry += (my - ry) * 0.2;
-      ring.style.transform = `translate3d(${rx}px, ${ry}px, 0)`;
-      running = Math.abs(mx - rx) > 0.1 || Math.abs(my - ry) > 0.1;
-      if (running) requestAnimationFrame(loop);
-    };
-    document.addEventListener("pointermove", (e) => {
-      if (e.pointerType !== "mouse") return;
-      mx = e.clientX; my = e.clientY;
-      dot.style.transform = `translate3d(${mx}px, ${my}px, 0)`;
-      ring.classList.add("is-on"); dot.classList.add("is-on");
-      ring.classList.toggle("is-hover", !!(e.target.closest && e.target.closest("a, button, [data-product], .opt, input, select, textarea, label")));
-      if (!running) { running = true; requestAnimationFrame(loop); }
-    }, { passive: true });
-    document.documentElement.addEventListener("mouseleave", () => { ring.classList.remove("is-on"); dot.classList.remove("is-on"); });
   }
 
   /* Marquee: duplicate content for a seamless loop */
