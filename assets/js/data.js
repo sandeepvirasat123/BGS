@@ -1,0 +1,260 @@
+/* =========================================================
+   BGS Industrial Solution — product catalogue
+   Single source of truth. Content taken from the
+   STICKOVA catalog. Edit here and every page updates.
+   ========================================================= */
+
+window.BGS = window.BGS || {};
+
+BGS.contact = {
+  phone: "+91-8054004498",
+  phoneHref: "tel:+918054004498",
+  whatsapp: "918054004498",
+  email: "info@bgsindustrialsolutions.com",
+  web: "www.bgsindustrialsolution.com",
+};
+
+BGS.categories = [
+  {
+    id: "tile",
+    name: "Tile Adhesives & Grout",
+    short: "Tile Adhesives",
+    blurb:
+      "Polymer-modified, cement-based adhesives and grout for tiles, vitrified slabs and natural stone — indoors, outdoors, dry or wet.",
+  },
+  {
+    id: "rubber",
+    name: "Synthetic Rubber Adhesives",
+    short: "Rubber Adhesives",
+    blurb:
+      "High-strength, fast-drying FR rubber adhesives for bus bodies, seating, mattresses and foam — by brush, spray gun or both.",
+  },
+  {
+    id: "wood",
+    name: "White / Water-Based Adhesives",
+    short: "Wood Adhesives",
+    blurb:
+      "Versatile synthetic adhesives for laminates, plywood, veneer and furniture — from DIY jobs to professional carpentry.",
+  },
+];
+
+BGS.products = [
+  /* ---------------- Tile adhesives ---------------- */
+  {
+    id: "pearl",
+    name: "StickoStrong Pearl",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "Grey polymer-modified tile adhesive",
+    accent: "#E9A800",
+    media: { type: "img", src: "assets/img/pearl.webp" },
+    description:
+      "STICKOSTRONG PEARL is a grey, high polymer modified, cement based tile adhesive suitable for fixing tiles, natural stones and vitrified tiles in interior and exterior situations.",
+    applications: ["New flooring only", "Interiors", "Dry & wet areas", "Parking areas"],
+    highlights: ["Grey, cement based", "High polymer modified", "Vitrified & natural stone"],
+    shelfLife: "12 months from the date of manufacturing in unopened condition. Store in a cool and dry place.",
+    packaging: ["20 KG"],
+    tags: ["floor", "stone", "vitrified", "parking", "wet", "interior"],
+  },
+  {
+    id: "ruby",
+    name: "StickoStrong Ruby",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "Wall & floor adhesive — pools and tile-on-tile",
+    accent: "#D7263D",
+    media: { type: "img", src: "assets/img/ruby.webp" },
+    description:
+      "STICKOSTRONG RUBY is a high polymer modified, cement based wall and floor tile adhesive, suitable for fixing tiles and natural stones in interior and exterior situations, including swimming pools, and for fixing tiles on tile.",
+    applications: [
+      "Floors",
+      "Walls up to 2ft × 2ft",
+      "2ft × 4ft till 15ft",
+      "Interiors",
+      "Exteriors",
+      "Dry & wet areas",
+    ],
+    highlights: ["Swimming pools", "Tile-on-tile", "Interior & exterior"],
+    shelfLife: "12 months from the date of manufacturing in unopened condition. Store in a cool and dry place.",
+    packaging: ["20 KG"],
+    tags: ["floor", "wall", "large", "stone", "pool", "tile-on-tile", "wet", "exterior", "interior"],
+  },
+  {
+    id: "sapphire",
+    name: "StickoStrong Sapphire",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "Premium white adhesive — water & frost resistant",
+    accent: "#1C7ED6",
+    media: { type: "img", src: "assets/img/sapphire.webp" },
+    description:
+      "STICKOSTRONG SAPPHIRE is a premium white, water and frost resistant, high polymer modified cementitious wall and floor tile adhesive, specially formulated for fixing mosaic tiles, ceramic and glass mosaic. It is also suitable for ceramic and vitrified wall and floor tiles, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone in interior and exterior locations — including swimming pools, tile-on-tile and stone.",
+    applications: [
+      "Floors",
+      "Walls up to 2ft × 2ft",
+      "2ft × 4ft till 15ft",
+      "Interiors",
+      "Exteriors",
+      "Dry & wet areas",
+    ],
+    highlights: ["White — ideal for glass mosaic", "Water & frost resistant", "Marble, granite, quartz"],
+    shelfLife: "12 months from the date of manufacturing in unopened condition. Store in a cool and dry place.",
+    packaging: ["20 KG"],
+    tags: ["floor", "wall", "large", "mosaic", "glass", "stone", "pool", "tile-on-tile", "wet", "exterior", "interior"],
+    featured: true,
+  },
+  {
+    id: "tile-grout",
+    name: "StickoStrong Tile Grout",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "Fine, water-resistant polymer grout",
+    accent: "#138A80",
+    media: { type: "img", src: "assets/img/tile-grout.webp", light: true },
+    description:
+      "STICKOSTRONG TILE GROUT is a high quality, fine, polymer modified, water-resistant, cement based powder grout designed for grouting glazed wall tiles, mosaics, vitrified and fully vitrified tiles, floor tiles and industrial floor tiles. Where chemical resistance, hygiene and sterility are important, use an epoxy grout.",
+    applications: ["Walls", "Floors", "Interiors & exteriors", "Dry areas", "Work tops"],
+    highlights: ["Fine, smooth finish", "Water resistant", "Mosaic to industrial floors"],
+    shelfLife: "12 months from the date of manufacturing in unopened condition. Store in a cool and dry place.",
+    packaging: ["1 KG pouch"],
+    tags: ["grout", "floor", "wall", "mosaic", "worktop", "interior", "exterior"],
+  },
+
+  /* ---------------- Synthetic rubber adhesives ---------------- */
+  {
+    id: "sr-1386",
+    name: "StickoBond SR 1386",
+    line: "StickoBond",
+    category: "rubber",
+    tagline: "High-strength spray-grade rubber adhesive",
+    accent: "#1C7ED6",
+    media: { type: "tin", src: "assets/img/tin.webp", code: "SR 1386" },
+    description:
+      "STICKOBOND SR 1386 is a high-strength synthetic rubber adhesive. It is applied with a spray gun only, and is primarily used where a strong bond is needed.",
+    applications: ["Bus body", "Seats", "Mattress", "Other material"],
+    highlights: ["Spray gun application", "High-strength bond", "Synthetic rubber"],
+    method: ["Spray"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["25 KG"],
+    tags: ["bus", "seat", "mattress", "spray"],
+  },
+  {
+    id: "sp-1411-b",
+    name: "StickoBond SP 1411 B",
+    line: "StickoBond",
+    category: "rubber",
+    tagline: "Hybrid FR adhesive — brush or spray",
+    accent: "#1C7ED6",
+    media: { type: "tin", src: "assets/img/tin.webp", code: "SP 1411 B", fr: true },
+    description:
+      "STICKOBOND SP 1411 B is a high-strength, fast drying synthetic rubber FR adhesive. It is hybrid in nature — it can be applied by brush or spray gun — and is primarily used where a strong bond is needed.",
+    applications: ["Bus body", "Seats", "Mattress", "Foam to foam", "Other material"],
+    highlights: ["Fire retardant (FR)", "Brush + spray hybrid", "Fast drying"],
+    method: ["Brush", "Spray"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["25 KG"],
+    tags: ["bus", "seat", "mattress", "foam", "fr", "brush", "spray"],
+    featured: true,
+  },
+  {
+    id: "sp-1415-h",
+    name: "StickoBond SP 1415 H",
+    line: "StickoBond",
+    category: "rubber",
+    tagline: "Hybrid FR adhesive for heavy-duty bonds",
+    accent: "#1C7ED6",
+    media: { type: "tin", src: "assets/img/tin.webp", code: "SP 1415 H", fr: true },
+    description:
+      "STICKOBOND SP 1415 H is a high-strength, fast drying synthetic rubber FR adhesive. It is hybrid in nature — it can be applied by brush or spray gun — and is primarily used where a strong bond is needed.",
+    applications: ["Bus body", "Seats", "Mattress", "Other material"],
+    highlights: ["Fire retardant (FR)", "Brush + spray hybrid", "Fast drying"],
+    method: ["Brush", "Spray"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["25 KG"],
+    tags: ["bus", "seat", "mattress", "fr", "brush", "spray"],
+  },
+  {
+    id: "sr-1430",
+    name: "StickoBond SR 1430",
+    line: "StickoBond",
+    category: "rubber",
+    tagline: "Brush-grade FR adhesive for foam",
+    accent: "#1C7ED6",
+    media: { type: "tin", src: "assets/img/tin.webp", code: "SR 1430", fr: true },
+    description:
+      "STICKOBOND SR 1430 is a high-strength, fast drying synthetic rubber FR adhesive. It is applied by brush and is primarily used where a strong bond is needed.",
+    applications: ["Bus body", "Seats", "Mattress", "Foam to foam", "Other material"],
+    highlights: ["Fire retardant (FR)", "Brush application", "Fast drying"],
+    method: ["Brush"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["25 KG"],
+    tags: ["bus", "seat", "mattress", "foam", "fr", "brush"],
+  },
+
+  /* ---------------- White / water-based adhesives ---------------- */
+  {
+    id: "ezee",
+    name: "StickoBond Ezee",
+    line: "StickoBond",
+    category: "wood",
+    tagline: "All-round adhesive for laminates & veneer",
+    accent: "#1C7ED6",
+    media: { type: "bucket", src: "assets/img/bucket.webp", code: "EZEE" },
+    description:
+      "STICKOBOND EZEE is a high-performance adhesive that is perfect for bonding laminates, furniture, veneer and many other materials. It is a versatile adhesive for a wide range of applications, from DIY projects to professional carpentry and furniture making.",
+    applications: ["Laminates", "Wood", "Plywood", "Other material"],
+    highlights: ["Laminates & veneer", "DIY to professional", "Versatile"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["50 KG", "20 KG", "5 KG", "1 KG"],
+    tags: ["laminate", "wood", "plywood", "veneer", "furniture"],
+  },
+  {
+    id: "super",
+    name: "StickoBond Super",
+    line: "StickoBond",
+    category: "wood",
+    tagline: "High-strength, fast-drying wood adhesive",
+    accent: "#1C7ED6",
+    media: { type: "bucket", src: "assets/img/bucket.webp", code: "SUPER" },
+    description:
+      "STICKOBOND SUPER is a high-strength, fast drying synthetic adhesive, primarily used for bonding wood, plywood, laminates and other materials.",
+    applications: ["Laminates", "Wood", "Plywood", "Other material"],
+    highlights: ["High strength", "Fast drying", "Wood & plywood"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["50 KG", "20 KG", "5 KG", "1 KG"],
+    tags: ["laminate", "wood", "plywood"],
+  },
+  {
+    id: "super-plus",
+    name: "StickoBond Super Plus",
+    line: "StickoBond",
+    category: "wood",
+    tagline: "Pro-grade adhesive for furniture making",
+    accent: "#1C7ED6",
+    media: { type: "bucket", src: "assets/img/bucket.webp", code: "SUPER PLUS" },
+    description:
+      "STICKOBOND SUPER PLUS is a high-strength, fast drying synthetic adhesive, primarily used for bonding wood, plywood, laminates and other materials — built for furniture making and carpentry.",
+    applications: ["Laminates", "Wood", "Plywood", "Furniture making", "Carpentry", "Other material"],
+    highlights: ["Furniture & carpentry", "High strength", "Fast drying"],
+    shelfLife: "6 – 12 months from the date of manufacturing.",
+    packaging: ["50 KG", "20 KG", "5 KG", "1 KG"],
+    tags: ["laminate", "wood", "plywood", "veneer", "furniture"],
+    featured: true,
+  },
+];
+
+/* Product-finder questions: each option maps to product tags */
+BGS.finder = [
+  { id: "floor", label: "Floor tiles", group: "tile" },
+  { id: "wall", label: "Wall tiles", group: "tile" },
+  { id: "large", label: "Large format (2×4 ft)", group: "tile" },
+  { id: "mosaic", label: "Mosaic / glass tiles", group: "tile" },
+  { id: "stone", label: "Marble, granite & stone", group: "tile" },
+  { id: "pool", label: "Swimming pools", group: "tile" },
+  { id: "tile-on-tile", label: "Tile over old tile", group: "tile" },
+  { id: "grout", label: "Filling tile joints", group: "tile" },
+  { id: "bus", label: "Bus body & seats", group: "rubber" },
+  { id: "foam", label: "Foam to foam / mattress", group: "rubber" },
+  { id: "laminate", label: "Laminates & plywood", group: "wood" },
+  { id: "furniture", label: "Furniture & carpentry", group: "wood" },
+];
