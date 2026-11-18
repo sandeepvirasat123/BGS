@@ -2,21 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>BGS Industrial Solution | Stickova Tile, Rubber &amp; Wood Adhesives</title>
-  <meta name="description" content="Stickova adhesives by BGS Industrial Solution — polymer-modified tile adhesives &amp; grout, FR synthetic rubber adhesives and white wood adhesives. Consistent quality, competitive pricing, technical support." />
-  <meta name="theme-color" content="#0a0f1a" />
+  <meta name="description" content="Stickova adhesives by BGS Industrial Solution — polymer-modified tile adhesives &amp; grout, FR synthetic rubber adhesives and white wood adhesives. Product finder, bag calculator and fast quotes." />
+  <meta name="theme-color" content="#ffffff" />
   <meta property="og:title" content="BGS Industrial Solution — Stickova Adhesives" />
   <meta property="og:description" content="High-performance tile, rubber and wood adhesives for professionals, businesses and industries." />
   <meta property="og:image" content="assets/img/hero-worker.webp" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preload" as="image" href="assets/img/hero-worker.webp" />
-  <script>document.documentElement.classList.add("js")</script>
+  <script>!function(d){d.classList.add("js");var t;try{t=JSON.parse(localStorage.getItem("bgs-theme"));if(!sessionStorage.getItem("bgs-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("is-loading")}catch(e){}d.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}(document.documentElement)</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BGS Industrial Solution Pvt. Ltd.",
+    "brand": { "@type": "Brand", "name": "Stickova Adhesives" },
+    "url": "https://www.bgsindustrialsolution.com/",
+    "logo": "https://www.bgsindustrialsolution.com/assets/img/icon-512.png",
+    "email": "info@bgsindustrialsolutions.com",
+    "telephone": "+91-8054004498",
+    "address": [
+      { "@type": "PostalAddress", "streetAddress": "A-43, Sector 65", "addressLocality": "Noida", "addressRegion": "Uttar Pradesh", "postalCode": "201301", "addressCountry": "IN" },
+      { "@type": "PostalAddress", "streetAddress": "Opp. Valmiki Mandir, Bali Singh Bhagwan Singh Road, O/S Ghee Mandi Gate", "addressLocality": "Amritsar", "addressRegion": "Punjab", "postalCode": "143001", "addressCountry": "IN" }
+    ]
+  }
+  </script>
 </head>
 <body data-page="home">
   <div id="header"></div>
@@ -24,39 +43,52 @@
   <main id="main">
     <!-- ============ HERO ============ -->
     <section class="hero">
+      <div class="hero__bg" aria-hidden="true"><span class="blob blob--1"></span><span class="blob blob--2"></span><span class="blob blob--3"></span></div>
       <div class="container hero__grid">
         <div>
           <span class="hero__badge reveal"><b>70+ YRS</b> A Bharat DyeChem group venture</span>
-          <h1 class="h-display reveal" style="--d:.06s">Adhesives that make every connection <span class="blue">stronger.</span></h1>
-          <p class="lead reveal" style="--d:.12s">High-performance Stickova adhesives — from polymer-modified tile adhesives to FR rubber and white wood adhesives — built for strong bonding, consistent quality and reliable results across every application.</p>
-          <div class="hero__actions reveal" style="--d:.18s">
-            <a class="btn btn--blue" href="products.html">Explore products
+          <h1 class="h-display" data-split>Adhesives that make every connection <span class="text-grad">stronger.</span></h1>
+          <div class="hero__rotator reveal" style="--d:.35s">Engineered for <span class="rotator" data-rotate="tiles &amp; natural stone|swimming pools|bus bodies &amp; seats|foam &amp; mattresses|laminates &amp; plywood|furniture making">tiles</span></div>
+          <p class="lead reveal" style="--d:.42s">High-performance Stickova adhesives — polymer-modified tile adhesives, FR rubber adhesives and white wood adhesives — built for strong bonding, consistent quality and reliable results.</p>
+          <div class="hero__actions reveal" style="--d:.5s">
+            <a class="btn btn--blue" href="products.html" data-magnetic>Explore products
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn--ghost" href="#finder">Find the right adhesive</a>
+            <a class="btn btn--ghost" href="#tools" data-magnetic>Find the right adhesive</a>
           </div>
-          <div class="hero__trust reveal" style="--d:.24s">
+          <div class="hero__trust reveal" style="--d:.58s">
             <div><strong><span data-count="70">70</span>+</strong><span>Years of group legacy</span></div>
             <div><strong data-count="11">11</strong><span>Specialised products</span></div>
             <div><strong data-count="9">9</strong><span>Industries served</span></div>
           </div>
         </div>
 
-        <div class="hero__visual reveal" style="--d:.1s">
+        <div class="hero__visual reveal reveal--scale" style="--d:.15s">
           <div class="hero__photo">
             <img src="assets/img/hero-worker.webp" alt="Applicator mixing Stickova tile adhesive on a construction site" width="1920" height="1280" fetchpriority="high" />
             <span class="hero__photo-caption"><span class="dot"></span>Trusted on real job sites</span>
           </div>
-          <a class="float-card float-card--pack" href="products.html#sapphire" data-product="sapphire">
-            <img src="assets/img/sapphire.webp" alt="StickoStrong Sapphire pack" width="800" height="887" />
-            <span>StickoStrong Sapphire</span>
-            <small>Premium white tile adhesive</small>
-          </a>
-          <div class="float-card float-card--stat">
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <div><strong>Interior &amp; exterior</strong><span>Dry &amp; wet areas</span></div>
+          <div data-depth="-26" style="position:absolute;inset:0;pointer-events:none">
+            <a class="float-card float-card--pack floaty" href="products.html#sapphire" data-product="sapphire" style="pointer-events:auto">
+              <img src="assets/img/sapphire.webp" alt="StickoStrong Sapphire pack" width="800" height="887" />
+              <span>StickoStrong Sapphire</span>
+              <small>Premium white tile adhesive</small>
+            </a>
+          </div>
+          <div data-depth="18" style="position:absolute;inset:0;pointer-events:none">
+            <div class="float-card float-card--stat floaty--slow">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <div><strong>Interior &amp; exterior</strong><span>Dry &amp; wet areas</span></div>
+            </div>
+          </div>
+          <div data-depth="32" style="position:absolute;inset:0;pointer-events:none">
+            <div class="float-card float-card--chip floaty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Polymer modified
+            </div>
           </div>
         </div>
       </div>
+      <a class="scroll-hint" href="#range" aria-label="Scroll to content"><span></span>Scroll</a>
     </section>
 
     <!-- ============ INDUSTRIES MARQUEE ============ -->
@@ -67,18 +99,18 @@
     </div>
 
     <!-- ============ CATEGORIES ============ -->
-    <section class="section">
+    <section class="section" id="range">
       <div class="container">
         <div class="section-head section-head--split">
           <div style="display:grid;gap:18px">
             <span class="eyebrow reveal">Our range</span>
-            <h2 class="h-1 reveal">Three adhesive families. One standard of quality.</h2>
+            <h2 class="h-1" data-split>Three adhesive families. One standard of quality.</h2>
           </div>
           <p class="lead reveal">Developed with a focus on performance, versatility and value — so professionals, businesses and industries get the right bond for every surface.</p>
         </div>
 
         <div class="bento">
-          <a class="cat cat--tile reveal" href="products.html#tile">
+          <a class="cat cat--tile spot reveal" href="products.html#tile">
             <div class="cat__body">
               <span class="cat__num">01 — StickoStrong</span>
               <h3 style="margin-top:14px">Tile Adhesives &amp; Grout</h3>
@@ -94,8 +126,7 @@
               <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </div>
           </a>
-
-          <a class="cat cat--rubber reveal" href="products.html#rubber" style="--d:.08s">
+          <a class="cat cat--rubber spot reveal" href="products.html#rubber" style="--d:.08s">
             <div class="cat__body">
               <span class="cat__num">02 — StickoBond</span>
               <h3 style="margin-top:14px">Synthetic Rubber Adhesives</h3>
@@ -107,8 +138,7 @@
               <span class="cat__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </div>
           </a>
-
-          <a class="cat cat--wood reveal" href="products.html#wood" style="--d:.16s">
+          <a class="cat cat--wood spot reveal" href="products.html#wood" style="--d:.16s">
             <div class="cat__body">
               <span class="cat__num">03 — StickoBond</span>
               <h3 style="margin-top:14px">White / Wood Adhesives</h3>
@@ -124,21 +154,82 @@
       </div>
     </section>
 
-    <!-- ============ PRODUCT FINDER ============ -->
-    <section class="section section--sand" id="finder">
+    <!-- ============ SMART TOOLS ============ -->
+    <section class="section section--sand" id="tools">
+      <span id="calculator" style="position:absolute;top:0" aria-hidden="true"></span>
       <div class="container">
-        <div class="finder reveal">
-          <div>
-            <span class="eyebrow">Product finder</span>
-            <h2 class="h-2" style="margin-top:16px">Not sure which adhesive? Tell us the job.</h2>
-            <p class="muted" style="margin-top:14px">Select everything that applies — we'll recommend the Stickova products whose application areas match.</p>
-            <p class="finder__step" style="margin-top:32px">What are you working on?</p>
-            <div class="finder__options" id="finderOptions" role="group" aria-label="Application"></div>
-            <button type="button" class="link-arrow" id="finderReset" style="margin-top:22px">Clear selection</button>
+        <div class="section-head section-head--center">
+          <span class="eyebrow reveal">Smart tools</span>
+          <h2 class="h-1" data-split>Choose faster. Order exactly what you need.</h2>
+        </div>
+        <div class="tools reveal">
+          <div class="tools__tabs" role="tablist" aria-label="Tools">
+            <span class="tools__ind" aria-hidden="true"></span>
+            <button class="tools__tab" role="tab" id="tab-finder" data-tab="finder" aria-controls="panel-finder" aria-selected="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Product finder</button>
+            <button class="tools__tab" role="tab" id="tab-calc" data-tab="calc" aria-controls="panel-calc" aria-selected="false" tabindex="-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h4"/></svg>Adhesive calculator</button>
           </div>
-          <div>
-            <p class="finder__step">Recommended for you</p>
-            <div class="finder__results" id="finderResults" aria-live="polite"></div>
+
+          <div class="tools__panel" id="panel-finder" role="tabpanel" aria-labelledby="tab-finder">
+            <div class="finder" id="finder">
+              <div>
+                <h3 class="h-2">Not sure which adhesive? Tell us the job.</h3>
+                <p class="muted" style="margin-top:14px">Select everything that applies — we'll recommend the Stickova products whose application areas match.</p>
+                <p class="finder__step" style="margin-top:32px">What are you working on?</p>
+                <div class="finder__options" id="finderOptions" role="group" aria-label="Application"></div>
+                <button type="button" class="link-arrow" id="finderReset" style="margin-top:22px">Clear selection</button>
+              </div>
+              <div>
+                <p class="finder__step">Recommended for you</p>
+                <div class="finder__results" id="finderResults" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools__panel" id="panel-calc" role="tabpanel" aria-labelledby="tab-calc" hidden>
+            <div class="calc" id="calc">
+              <div class="calc__fields">
+                <div>
+                  <h3 class="h-2">How many bags do you need?</h3>
+                  <p class="muted" style="margin-top:12px">Estimate StickoStrong tile adhesive for your area in seconds — then add it straight to your enquiry.</p>
+                </div>
+                <div class="field">
+                  <label for="calcArea">Area to tile</label>
+                  <div class="calc__area">
+                    <input id="calcArea" type="number" min="0" step="1" inputmode="decimal" />
+                    <span id="calcUnitLbl" class="muted">m²</span>
+                    <div class="seg" role="group" aria-label="Unit" style="margin-left:auto">
+                      <button type="button" data-unit="m2" aria-pressed="true">m²</button>
+                      <button type="button" data-unit="ft2" aria-pressed="false">sq ft</button>
+                    </div>
+                  </div>
+                  <input id="calcRange" class="range" type="range" min="1" max="500" step="1" aria-label="Area slider" />
+                </div>
+                <div class="form__row">
+                  <div class="field"><label for="calcTrowel">Trowel / bed size</label><select id="calcTrowel" aria-describedby="calcTrowelHint"></select><span class="form__note" id="calcTrowelHint"></span></div>
+                  <div class="field"><label for="calcProduct">Adhesive</label><select id="calcProduct"></select></div>
+                </div>
+                <div class="field">
+                  <label>Wastage allowance</label>
+                  <div class="seg" id="calcWastage" role="group" aria-label="Wastage allowance" style="justify-self:start"></div>
+                </div>
+              </div>
+              <div class="calc__out" aria-live="polite">
+                <span class="eyebrow" style="color:#6fb3f2">Your estimate</span>
+                <div class="calc__big"><strong id="calcBags">0</strong><span>bags × 20 KG</span></div>
+                <div class="bags" id="calcBagIcons" aria-hidden="true"></div>
+                <p>of <b id="calcProdName" style="color:#fff"></b></p>
+                <div class="calc__rows">
+                  <div><span>Area</span><b id="calcM2">—</b></div>
+                  <div><span>Coverage rate</span><b id="calcRate">—</b></div>
+                  <div><span>Total adhesive (incl. wastage)</span><b id="calcKg">—</b></div>
+                </div>
+                <button class="btn btn--light" type="button" id="calcAdd">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span class="lbl">Add to enquiry</span></button>
+                <p class="calc__note">Indicative estimate using typical consumption for each notch-trowel size. Actual usage depends on substrate, tile size and back-buttering — our technical team will confirm before you order.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +241,7 @@
         <div class="section-head section-head--split">
           <div style="display:grid;gap:18px">
             <span class="eyebrow reveal">Best sellers</span>
-            <h2 class="h-1 reveal">Built for the jobs professionals do every day.</h2>
+            <h2 class="h-1" data-split>Built for the jobs professionals do every day.</h2>
           </div>
           <div class="reveal" style="display:grid;gap:20px;justify-items:start">
             <p class="lead">Every Stickova product is evaluated for performance, consistency and application suitability before it reaches you.</p>
@@ -164,24 +255,24 @@
     <!-- ============ ABOUT ============ -->
     <section class="section section--sand">
       <div class="container split">
-        <div class="split__img reveal">
-          <img src="assets/img/building.webp" alt="Modern high-rise buildings" loading="lazy" width="1000" height="1333" />
+        <div class="split__img clip-reveal">
+          <img src="assets/img/building.webp" alt="Modern high-rise buildings" loading="lazy" width="1000" height="1333" data-parallax="0.12" />
           <div class="legacy-badge">
-            <strong>70</strong>
+            <strong><span data-count="70">70</span></strong>
             <span>years of market leadership through our sister concern, <b>Bharat DyeChem Pvt Ltd</b></span>
           </div>
         </div>
         <div>
           <span class="eyebrow reveal">About BGS</span>
-          <h2 class="h-1 reveal" style="margin-top:18px">A new venture with seven decades of trust behind it.</h2>
+          <h2 class="h-1" data-split style="margin-top:18px">A new venture with seven decades of trust behind it.</h2>
           <p class="lead reveal" style="margin-top:22px">BGS Industrial Solution was founded by Mr Bharat Khanna, Mr Gaurav Khanna and Mr Shubham Khanna to build a multi-dimensional business serving the industries that build India.</p>
-          <ul class="ticks reveal">
-            <li>Sister concern of Bharat DyeChem Pvt Ltd — a textile industry leader for 70 years</li>
-            <li>Supported by Stickova Adhesives and Pidilite Inc</li>
-            <li>Best-quality products at competitive prices</li>
-            <li>Application guidance and technical support after delivery</li>
+          <ul class="ticks">
+            <li class="reveal reveal--right">Sister concern of Bharat DyeChem Pvt Ltd — a textile industry leader for 70 years</li>
+            <li class="reveal reveal--right" style="--d:.06s">Supported by Stickova Adhesives and Pidilite Inc</li>
+            <li class="reveal reveal--right" style="--d:.12s">Best-quality products at competitive prices</li>
+            <li class="reveal reveal--right" style="--d:.18s">Application guidance and technical support after delivery</li>
           </ul>
-          <div class="reveal" style="margin-top:36px"><a class="btn btn--dark" href="about.html">Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <div class="reveal" style="margin-top:36px"><a class="btn" href="about.html" data-magnetic>Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
       </div>
     </section>
@@ -192,16 +283,16 @@
         <div class="section-head section-head--split">
           <div style="display:grid;gap:18px">
             <span class="eyebrow reveal">How we work</span>
-            <h2 class="h-1 reveal">From your challenge to a bond that lasts.</h2>
+            <h2 class="h-1" data-split>From your challenge to a bond that lasts.</h2>
           </div>
           <p class="lead reveal">Our relationship doesn't end at delivery. Five steps keep every project on track.</p>
         </div>
         <ol class="process">
-          <li class="step reveal"><span class="step__num">01</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Understand</h3><p>We listen and understand your application, surface, performance requirements and challenges.</p></li>
-          <li class="step reveal" style="--d:.06s"><span class="step__num">02</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4 19a1.5 1.5 0 0 0 1.3 2h13.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></svg></span><h3>Develop</h3><p>Our technical team balances bond strength, workability, durability and value in every formulation.</p></li>
-          <li class="step reveal" style="--d:.12s"><span class="step__num">03</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><h3>Test</h3><p>Products are evaluated for performance, consistency and application suitability before reaching you.</p></li>
-          <li class="step reveal" style="--d:.18s"><span class="step__num">04</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><h3>Deliver</h3><p>Consistent quality, dependable supply and products that perform in real-world applications.</p></li>
-          <li class="step reveal" style="--d:.24s"><span class="step__num">05</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span><h3>Support</h3><p>Application guidance and technical support to help you achieve the best results.</p></li>
+          <li class="step spot reveal"><span class="step__num">01</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Understand</h3><p>We listen and understand your application, surface, performance requirements and challenges.</p></li>
+          <li class="step spot reveal" style="--d:.08s"><span class="step__num">02</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4 19a1.5 1.5 0 0 0 1.3 2h13.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></svg></span><h3>Develop</h3><p>Our technical team balances bond strength, workability, durability and value in every formulation.</p></li>
+          <li class="step spot reveal" style="--d:.16s"><span class="step__num">03</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><h3>Test</h3><p>Products are evaluated for performance, consistency and application suitability before reaching you.</p></li>
+          <li class="step spot reveal" style="--d:.24s"><span class="step__num">04</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><h3>Deliver</h3><p>Consistent quality, dependable supply and products that perform in real-world applications.</p></li>
+          <li class="step spot reveal" style="--d:.32s"><span class="step__num">05</span><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span><h3>Support</h3><p>Application guidance and technical support to help you achieve the best results.</p></li>
         </ol>
       </div>
     </section>
@@ -211,13 +302,13 @@
       <div class="container">
         <div class="section-head section-head--center">
           <span class="eyebrow reveal">Industries we serve</span>
-          <h2 class="h-1 reveal">One partner across nine industries.</h2>
+          <h2 class="h-1" data-split>One partner across nine industries.</h2>
         </div>
         <div class="industries">
           <div class="industry reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6M9 10h1M14 10h1"/></svg><span>Construction</span></div>
           <div class="industry reveal" style="--d:.04s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/><path d="M9.5 17h5M5 12h14"/></svg><span>Automotive</span></div>
           <div class="industry reveal" style="--d:.08s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0z"/><path d="M4 18v2M20 18v2"/></svg><span>Furniture</span></div>
-          <div class="industry reveal" style="--d:.12s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M12 3v8M8 21l2-4M16 21l-2-4"/><circle cx="8" cy="14" r=".5"/><circle cx="16" cy="14" r=".5"/></svg><span>Railway</span></div>
+          <div class="industry reveal" style="--d:.12s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M12 3v8M8 21l2-4M16 21l-2-4"/></svg><span>Railway</span></div>
           <div class="industry reveal" style="--d:.16s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg><span>Electronics</span></div>
           <div class="industry reveal" style="--d:.2s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16M4 20h16M12 4v16M8 4v2M16 4v2M8 18v2M16 18v2"/></svg><span>Steel</span></div>
           <div class="industry reveal" style="--d:.24s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v5M12 16v5M3 12h5M16 12h5"/></svg><span>Rubber</span></div>
@@ -227,15 +318,28 @@
       </div>
     </section>
 
-    <!-- ============ CTA ============ -->
-    <section class="section" style="padding-top:0">
+    <!-- ============ FAQ ============ -->
+    <section class="section section--sand" id="faq">
       <div class="container">
-        <div class="cta-band reveal">
-          <span class="eyebrow" style="color:#fff">Let's work together</span>
+        <div class="section-head section-head--center">
+          <span class="eyebrow reveal">FAQ</span>
+          <h2 class="h-1" data-split>Questions, answered.</h2>
+          <p class="lead reveal">Quick answers about choosing and using Stickova adhesives.</p>
+        </div>
+        <div class="faq" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal reveal--scale">
+          <div class="cta-band__rings" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="eyebrow">Let's work together</span>
           <h2 class="h-1" style="margin-top:18px">Build better. Grow together.</h2>
           <p>We're partnering with dealers, distributors, contractors, applicators, builders and architects who share our commitment to quality. Your growth is our growth.</p>
           <div class="cta-band__actions">
-            <a class="btn btn--light" href="partner.html">Become a partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--light" href="partner.html" data-magnetic>Become a partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="btn btn--outline-light" href="tel:+918054004498">Call +91-8054004498</a>
           </div>
         </div>

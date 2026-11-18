@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Products | Stickova Tile, Rubber &amp; Wood Adhesives — BGS Industrial Solution</title>
   <meta name="description" content="Browse the full Stickova range: StickoStrong Pearl, Ruby, Sapphire tile adhesives and Tile Grout; StickoBond SR/SP synthetic rubber FR adhesives; StickoBond Ezee, Super and Super Plus wood adhesives." />
-  <meta name="theme-color" content="#0a0f1a" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script>document.documentElement.classList.add("js")</script>
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <script>!function(d){d.classList.add("js");var t;try{t=JSON.parse(localStorage.getItem("bgs-theme"));if(!sessionStorage.getItem("bgs-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("is-loading")}catch(e){}d.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}(document.documentElement)</script>
 </head>
 <body data-page="products">
   <div id="header"></div>
@@ -20,7 +22,7 @@
     <section class="page-hero">
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span></nav>
-        <h1 class="h-display">The Stickova range.</h1>
+        <h1 class="h-display" data-split>The Stickova range.</h1>
         <p class="lead">Tile adhesives and grout, synthetic rubber adhesives and white wood adhesives — engineered for the right balance of bond strength, workability, durability and value.</p>
       </div>
     </section>
@@ -44,13 +46,14 @@
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <div class="cta-band reveal">
-          <span class="eyebrow" style="color:#fff">Need help choosing?</span>
+        <div class="cta-band reveal reveal--scale">
+          <div class="cta-band__rings" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="eyebrow">Need help choosing?</span>
           <h2 class="h-1" style="margin-top:18px">Talk to our technical team.</h2>
           <p>Tell us your surface, substrate and application — we'll recommend the right product and guide you through application.</p>
           <div class="cta-band__actions">
             <a class="btn btn--light" href="contact.html#enquiry">Request a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn--outline-light" href="index.html#finder">Use the product finder</a>
+            <a class="btn btn--outline-light" href="index.html#tools">Use the product finder</a>
           </div>
         </div>
       </div>

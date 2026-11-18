@@ -258,3 +258,53 @@ BGS.finder = [
   { id: "laminate", label: "Laminates & plywood", group: "wood" },
   { id: "furniture", label: "Furniture & carpentry", group: "wood" },
 ];
+
+/* Tile adhesive calculator — indicative consumption by notch-trowel size.
+   These are typical industry figures, NOT values from the catalog: confirm
+   with the technical team and edit here if you have tested Stickova numbers. */
+BGS.calculator = {
+  bagKg: 20,
+  trowels: [
+    { id: "6", label: "6 mm notch", hint: "Small wall tiles, smooth walls", kgPerM2: 3.5 },
+    { id: "8", label: "8 mm notch", hint: "Standard floor & wall tiles", kgPerM2: 4.5 },
+    { id: "10", label: "10 mm notch", hint: "Large-format & vitrified tiles", kgPerM2: 5.5 },
+    { id: "12", label: "12 mm notch", hint: "Natural stone, uneven surfaces", kgPerM2: 7 },
+  ],
+  wastage: [5, 10, 15],
+};
+
+/* FAQs — answers drawn from the catalog */
+BGS.faq = [
+  {
+    q: "Which tile adhesive should I use for a swimming pool?",
+    a: 'Use <a href="products.html#ruby">StickoStrong Ruby</a> or <a href="products.html#sapphire">StickoStrong Sapphire</a>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
+  },
+  {
+    q: "Can I fix new tiles directly over existing tiles?",
+    a: "Yes. StickoStrong Ruby and StickoStrong Sapphire are both suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.",
+  },
+  {
+    q: "Which adhesive is best for marble, granite or glass mosaic?",
+    a: 'StickoStrong Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+  },
+  {
+    q: "When should I use an epoxy grout instead of Tile Grout?",
+    a: "StickoStrong Tile Grout is a fine, polymer-modified, water-resistant cement grout for walls, floors, mosaics and vitrified tiles. Where chemical resistance, hygiene and sterility are important, use an epoxy grout.",
+  },
+  {
+    q: "What does “FR” mean on StickoBond rubber adhesives?",
+    a: "FR stands for fire retardant. StickoBond SP 1411 B, SP 1415 H and SR 1430 are high-strength, fast-drying synthetic rubber FR adhesives, used for bus bodies, seats, mattresses and foam.",
+  },
+  {
+    q: "Brush or spray gun — which StickoBond grade do I need?",
+    a: "SR 1386 is applied with a spray gun only. SP 1411 B and SP 1415 H are hybrid, so you can use either a brush or a spray gun. SR 1430 is applied by brush.",
+  },
+  {
+    q: "What pack sizes and shelf life do your products have?",
+    a: "Tile adhesives come in 20 KG packs with a 12-month shelf life (unopened, stored cool and dry). Synthetic rubber adhesives come in 25 KG tins, and white adhesives in 50, 20, 5 and 1 KG packs. Both have a 6–12 month shelf life from manufacture.",
+  },
+  {
+    q: "How do I become a dealer or distributor?",
+    a: 'We partner with dealers, distributors, contractors, applicators, builders and architects. Apply on our <a href="partner.html">Partner With Us</a> page or call +91-8054004498.',
+  },
+];
