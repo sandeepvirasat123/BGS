@@ -293,15 +293,19 @@ BGS.calculator = {
 BGS.faq = [
   {
     q: "Which tile adhesive should I use for a swimming pool?",
-    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <b>StickoStrong Topaz</b>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <strong>StickoStrong Topaz</strong>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
   },
   {
     q: "Can I fix new tiles directly over existing tiles?",
-    a: 'Yes. <a href="products.html#ruby">StickoStrong Ruby</a>, <a href="products.html#sapphire">StickoStrong Sapphire</a> and <b>StickoStrong Topaz</b> are all suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.',
+    a: 'Yes. <a href="products.html#ruby">StickoStrong Ruby</a>, <a href="products.html#sapphire">StickoStrong Sapphire</a> and <strong>StickoStrong Topaz</strong> are all suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.',
   },
   {
     q: "Which adhesive is best for marble, granite or glass mosaic?",
-    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <b>StickoStrong Topaz</b>. Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <strong>StickoStrong Topaz</strong>. Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+  },
+  {
+    q: "Which adhesive should I use for ceramic tiles at home?",
+    a: 'Use <a href="products.html#amber">StickoStrong Amber</a>. It is a high-bond C1T (Type 1) tile adhesive from our Domestic Range, made for pasting ceramic tiles on floors and walls. It is easy to use, long lasting and high strength.',
   },
   {
     q: "Which adhesive should I use for vitrified tiles on a new floor or a parking area?",
