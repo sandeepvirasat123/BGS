@@ -277,15 +277,19 @@ BGS.calculator = {
 BGS.faq = [
   {
     q: "Which tile adhesive should I use for a swimming pool?",
-    a: 'Use <a href="products.html#ruby">StickoStrong Ruby</a> or <a href="products.html#sapphire">StickoStrong Sapphire</a>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <b>StickoStrong Topaz</b>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
   },
   {
     q: "Can I fix new tiles directly over existing tiles?",
-    a: "Yes. StickoStrong Ruby and StickoStrong Sapphire are both suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.",
+    a: 'Yes. <a href="products.html#ruby">StickoStrong Ruby</a>, <a href="products.html#sapphire">StickoStrong Sapphire</a> and <b>StickoStrong Topaz</b> are all suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.',
   },
   {
     q: "Which adhesive is best for marble, granite or glass mosaic?",
-    a: 'StickoStrong Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <b>StickoStrong Topaz</b>. Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+  },
+  {
+    q: "Which adhesive should I use for vitrified tiles on a new floor or a parking area?",
+    a: 'Use <a href="products.html#pearl">StickoStrong Pearl</a>. It is a grey, high polymer modified, cement based adhesive for fixing tiles, natural stone and vitrified tiles on new flooring, in dry and wet areas, and in parking areas.',
   },
   {
     q: "When should I use an epoxy grout instead of Tile Grout?",
