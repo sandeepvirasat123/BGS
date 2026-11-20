@@ -455,15 +455,15 @@ html.is-loading body > :not(.loader) { visibility: hidden; }
 .add-btn.is-added svg { transform: rotate(360deg); }
 
 /* Pack mock-ups */
-.pack { position: relative; height: 100%; max-height: 100%; aspect-ratio: 408 / 612; transition: transform 0.8s var(--ease); filter: drop-shadow(0 18px 22px rgba(16, 24, 40, 0.22)); }
-.pack > img { width: 100%; height: 100%; object-fit: contain; }
-.pack__label { position: absolute; left: 13%; right: 13%; top: 34%; bottom: 22%; background: #fff; border-radius: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4%; text-align: center; overflow: hidden; container-type: inline-size; padding-bottom: 17%; box-shadow: inset 8px 0 10px -8px rgba(0, 0, 0, 0.25), inset -8px 0 10px -8px rgba(0, 0, 0, 0.25); }
-.pack--bucket .pack__label { left: 14%; right: 14%; top: 30%; bottom: 20%; }
-.pack__label img { width: 34%; }
-.pack__brand { font-family: var(--font-display); font-weight: 800; font-size: 11cqi; color: #0a0f1a; letter-spacing: -0.02em; line-height: 1; }
-.pack__code { font-family: var(--font-display); font-weight: 700; font-size: 10cqi; color: var(--blue); line-height: 1.05; padding-inline: 6%; }
-.pack__strip { position: absolute; left: 0; right: 0; bottom: 0; height: 15%; background: var(--blue); }
-.pack__fr { font-size: 6cqi; font-weight: 700; letter-spacing: 0.1em; color: #fff; background: #0a0f1a; padding: 1.5% 5%; border-radius: 3px; }
+.pack { position: relative; height: 100%; max-height: 100%; aspect-ratio: 352 / 620; transition: transform 0.8s var(--ease); filter: drop-shadow(0 18px 22px rgba(16, 24, 40, 0.22)); }
+.pack--bucket { aspect-ratio: 406 / 620; }
+.pack > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+/* sits over the blank "Lot No / Mfd" fields of the real label */
+.pack__label { position: absolute; left: 13%; right: 12.5%; top: 46.5%; bottom: 31.5%; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5%; text-align: center; overflow: hidden; container-type: inline-size; }
+.pack--bucket .pack__label { left: 23.5%; right: 23%; top: 49.5%; bottom: 33%; }
+.pack__brand { font-family: var(--font-display); font-weight: 800; font-size: 10cqi; color: #0a0f1a; letter-spacing: 0.04em; line-height: 1; }
+.pack__code { font-family: var(--font-display); font-weight: 800; font-size: 15cqi; color: #1f78c8; line-height: 1.05; padding-inline: 6%; }
+.pack__fr { font-size: 6.5cqi; font-weight: 700; letter-spacing: 0.1em; color: #fff; background: #0a0f1a; padding: 1.5% 5%; border-radius: 3px; }
 
 /* ---------- Tools (finder + calculator) ---------- */
 .tools { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; }

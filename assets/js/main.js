@@ -432,11 +432,9 @@
       <div class="pack pack--${m.type}">
         <img src="${m.src}" alt="${esc(p.name)} pack" loading="${load}" decoding="async" />
         <div class="pack__label" aria-hidden="true">
-          <img src="assets/img/stickova-logo.png" alt="" loading="lazy" />
           <span class="pack__brand">STICKOBOND</span>
           <span class="pack__code">${esc(m.code)}</span>
           ${m.fr ? '<span class="pack__fr">FR GRADE</span>' : ""}
-          <span class="pack__strip"></span>
         </div>
       </div>`;
   }

@@ -2,7 +2,7 @@
    Pages: network first (fresh content), fall back to cache.
    Assets: cache first, refreshed in the background.
    Bump VERSION whenever you deploy changes to CSS/JS/images. */
-const VERSION = "bgs-v6";
+const VERSION = "bgs-v7";
 const CORE = [
   "./",
   "index.html",
@@ -24,7 +24,8 @@ const CORE = [
   "assets/img/sapphire.webp",
   "assets/img/tile-grout.webp",
   "assets/img/tin.webp",
-  "assets/img/bucket.webp",
+  "assets/img/drum.webp",
+  "assets/img/amber.webp",
   "assets/img/gaurav-khanna.webp",
   "assets/img/bharat-khanna.webp",
 ];
