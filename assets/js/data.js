@@ -120,6 +120,38 @@ BGS.products = [
     featured: true,
   },
   {
+    id: "topaz",
+    name: "StickoStrong Topaz",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "Tile adhesive for pools, stone & tile-on-tile",
+    accent: "#0E96A5",
+    media: { type: "img", src: "assets/img/topaz.webp" },
+    description:
+      "STICKOSTRONG TOPAZ is a tile adhesive suitable for swimming pools, for fixing new tiles over existing tiles, and for marble, granite and glass mosaic. Contact us for full technical details.",
+    applications: ["Swimming pools", "Tile-on-tile", "Marble & granite", "Glass mosaic"],
+    highlights: ["Swimming pools", "Tile-on-tile", "Marble, granite & glass mosaic"],
+    shelfLife: "Contact us for details.",
+    packaging: ["On request"],
+    tags: ["pool", "tile-on-tile", "stone", "mosaic", "glass", "wet"],
+  },
+  {
+    id: "jade",
+    name: "StickoStrong Jade",
+    line: "StickoStrong",
+    category: "tile",
+    tagline: "New in the StickoStrong range — details coming soon",
+    accent: "#26965F",
+    media: { type: "img", src: "assets/img/jade.webp" },
+    description:
+      "STICKOSTRONG JADE is a new tile adhesive in the StickoStrong range. Contact us for its applications, packaging and technical details.",
+    applications: ["Contact us for applications"],
+    highlights: ["New in the range"],
+    shelfLife: "Contact us for details.",
+    packaging: ["On request"],
+    tags: ["new"],
+  },
+  {
     id: "tile-grout",
     name: "StickoStrong Tile Grout",
     line: "StickoStrong",
@@ -293,15 +325,15 @@ BGS.calculator = {
 BGS.faq = [
   {
     q: "Which tile adhesive should I use for a swimming pool?",
-    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <strong>StickoStrong Topaz</strong>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <a href="products.html#topaz">StickoStrong Topaz</a>. Both are suitable for swimming pools. Sapphire is a premium white, water- and frost-resistant adhesive, ideal for glass and ceramic mosaic.',
   },
   {
     q: "Can I fix new tiles directly over existing tiles?",
-    a: 'Yes. <a href="products.html#ruby">StickoStrong Ruby</a>, <a href="products.html#sapphire">StickoStrong Sapphire</a> and <strong>StickoStrong Topaz</strong> are all suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.',
+    a: 'Yes. <a href="products.html#ruby">StickoStrong Ruby</a>, <a href="products.html#sapphire">StickoStrong Sapphire</a> and <a href="products.html#topaz">StickoStrong Topaz</a> are all suitable for fixing tile-on-tile. Sapphire is also suitable for tile-on-stone.',
   },
   {
     q: "Which adhesive is best for marble, granite or glass mosaic?",
-    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <strong>StickoStrong Topaz</strong>. Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
+    a: 'Use <a href="products.html#sapphire">StickoStrong Sapphire</a> or <a href="products.html#topaz">StickoStrong Topaz</a>. Sapphire is formulated for mosaic, glass mosaic, metal or glass tiles, marble, granite, quartz stone, terrazzo and other natural stone, in interior and exterior locations.',
   },
   {
     q: "Which adhesive should I use for ceramic tiles at home?",
