@@ -438,7 +438,8 @@
       </div>`;
   }
   const mediaClass = (p) => (p.media.type === "img" ? (p.media.light ? "is-light" : "") : "is-pack");
-  const shortName = (p) => p.name.replace(/^Sticko(Strong|Bond)\s/, "");
+  // StickoStrong (tile) names are shown in full; StickoBond names drop the brand, which the eyebrow shows
+  const shortName = (p) => p.name.replace(/^StickoBond\s/, "");
 
   function cardHTML(p, i = 0) {
     const cat = catOf(p.category);
@@ -456,7 +457,7 @@
           ${mediaHTML(p)}
         </div>
         <div class="p-card__body">
-          <span class="p-card__line">${esc(p.line)}</span>
+          ${shortName(p) === p.name ? "" : `<span class="p-card__line">${esc(p.line)}</span>`}
           <h3><a class="p-card__link" href="products.html#${p.id}" data-product="${p.id}">${esc(shortName(p))}</a></h3>
           <p class="p-card__desc">${esc(p.tagline)}</p>
           <div class="p-card__meta">${chips.join("")}</div>
