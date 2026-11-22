@@ -97,7 +97,6 @@
       <div class="container">
         <a class="brand" href="index.html" aria-label="BGS Industrial Solution — home">
           <img src="assets/img/bgs-logo.png" alt="" width="46" height="46" />
-          <span class="brand__text"><span class="brand__name">BGS Industrial</span><span class="brand__sub">Stickova Adhesives</span></span>
         </a>
         <nav class="nav" id="siteNav" aria-label="Main">
           <span class="nav__pill" aria-hidden="true"></span>
